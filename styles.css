@@ -34,8 +34,9 @@ nav {
 
 .nav-brand {
   font-family: var(--mono);
-  font-size: 13px;
-  color: var(--muted);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -103,6 +104,7 @@ nav a:hover::after {
 /* ─── Hero ───────────────────────────────────────── */
 
 .hero {
+  /* background: linear-gradient(160deg, var(--accent-light) 0%, var(--bg) 55%); */
   max-width: 900px;
   margin: 0 auto;
   padding: 5rem 2.5rem 4rem;
@@ -124,8 +126,8 @@ nav a:hover::after {
 .hero-left h1 em {
   font-style: italic;
   color: var(--accent);
+  text-shadow: 0 0 40px rgba(29, 107, 74, 0.15);
 }
-
 .hero-left p {
   color: var(--muted);
   font-size: 15px;
@@ -160,6 +162,7 @@ nav a:hover::after {
   font-weight: 400;
   font-size: 13px;
   margin-bottom: 1.25rem;
+  max-width: 200ch;
   display: block;
   line-height: 1.6;
 }
@@ -240,6 +243,28 @@ nav a:hover::after {
 }
 
 /* ── Animation 3: Card lift on hover ──────────────── */
+.hero-cursor {
+  display: inline-block;
+  color: var(--accent);
+  font-weight: 300;
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+}
+.headshot-wrap {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.headshot {
+  width: 230px;
+  height: 230px;
+  border-radius: 18px;
+  object-fit: cover;
+  border: 1.5px solid #8FB88F;
+  background: #EEF5EF;
+  display: block;
+}
 
 .project {
   background: var(--surface);
@@ -253,9 +278,11 @@ nav a:hover::after {
   position: relative;
 
   /* Lift transition */
-  transition: background 0.2s ease,
-              transform 0.2s ease,
-              box-shadow 0.2s ease;
+  transition: background 0.15s ease, transform 0.15s ease;
+
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .project:first-child { border-radius: 8px 8px 0 0; }
@@ -265,7 +292,7 @@ nav a:hover::after {
 .project:hover {
   background: #fff;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  outline: 1px solid rgba(29, 107, 74, 0.15);
   z-index: 1;
 }
 
@@ -423,6 +450,13 @@ footer {
   font-size: 11px;
   color: var(--border);
   letter-spacing: 0.04em;
+}
+
+/* Better — wider and capped gracefully */
+.hero, .projects, .section-header, .contact, .divider {
+  max-width: min(1000px, 92vw);
+  padding-left: clamp(1.5rem, 5vw, 4.5rem);
+  padding-right: clamp(1.5rem, 4vw, 3.5rem);
 }
 
 /* ─── Responsive ─────────────────────────────────── */
