@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Dr. Sarah Okonkwo</title>
+<title>Shinjer Li</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="styles.css"/>
 </head>
@@ -14,40 +14,59 @@
   <div>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
+    <a href="#art">Art</a>
     <a href="#research">Research</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
 <section class="hero">
-  <div class="hero-left">
-    <!-- <div class="headshot-wrap">
-      <img src="headshot.jpg" alt="Dr. Sarah Okonkwo" class="headshot" />
-    </div> -->
-    <h1><span class="typed-hero"></span><span class="hero-cursor" aria-hidden="true">|</span></h1>
-    <!-- <h1>Physician-<br/><em>researcher</em><br/>& builder.</h1> -->
-    <p>I'm a second year medical student at Eastern Virginia Medical School (EVMS) with an interest in data science, imaging, and clinical informatics. I build tools that make evidence-based medicine more accessible at the point of care.</p>
-  </div>
-  <div class="headshot-wrap">
-      <img src="headshot.jpg" alt="Dr. Sarah Okonkwo" class="headshot" />
+  <div class="hero-top">
+    <div class="hero-left">
+      <h1><span class="typed-hero"></span><span class="hero-cursor" aria-hidden="true">|</span></h1>
+      <p>I'm a second year medical student at Eastern Virginia Medical School (EVMS) with an interest in data science, imaging, and clinical informatics. I build tools that make evidence-based medicine more accessible at the point of care.</p>
     </div>
-  <div class="hero-right json-block">
+    <div class="hero-headshot">
+      <div class="headshot-wrap">
+        <img src="assets/headshot.jpg" alt="Shinjer Li" class="headshot" />
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-bottom json-block">
     <span class="json-key">Shinjer.location</span>
     <span class="json-val">"Norfolk, VA"</span>
 
     <span class="json-key">Shinjer.contact</span>
-    <span class="json-val">["<a href="#">sli020@odu.edu</a>", "<a href="#">GitHub</a>"]</span>
+    <span class="json-val">["<a href='ma&#105;lt&#111;&#58;&#37;&#55;3l%69&#48;2&#37;30%&#52;0o%&#54;4&#117;&#46;edu'>sli&#48;20&#64;od&#117;&#46;ed&#117;</a>", "<a href="https://github.com/shinjer-li" target="_blank">GitHub</a>"]</span>
 
     <span class="json-key">Shinjer.cv</span>
-    <span class="json-val">"<a href="#">li_shinjer_cv.pdf</a>"</span>
+    <span class="json-val">"<a href="assets/CV.pdf" target="_blank">li_shinjer_cv.pdf</a>"</span>
+
+    <span class="json-key">Shinjer.education</span>
+    <span class="json-val stagger-item" data-stagger="0">
+      ["M.D. — Eastern Virginia Medical School (Class of 2029)",<br/>
+      "B.S. — Chemistry & Data Science — William & Mary (Dec 2024)"]
+    </span>
+
+    <span class="json-key">Shinjer.affiliations</span>
+    <span class="json-val stagger-item" data-stagger="1">
+      ["<a href="https://www.acr.org" target="_blank">ACR</a> 2025",
+      "<a href="https://www.rsna.org" target="_blank">RSNA</a> 2025",
+      "<a href="https://snmmi.org/" target="_blank">SNMMI</a> 2025"]
+    </span>
 
     <span class="json-key">Shinjer.interests</span>
-    <span class="json-val">["clinical decision support", "health equity", "NLP in EHR", "ultramarathons"]</span>
+    <span class="json-val">["clinical decision support", "health equity", "NLP in EHR"]</span>
 
-    <span class="json-key">Shinjer.training</span>
-    <span class="json-val stagger-item" data-stagger="0">"B.S. — William & Mary<br/>MD (Class of 2029) — Eastern Virginia Medical School"</span>
+    <span class="json-key">Shinjer.hobbies</span>
+    <span class="json-val stagger-item" data-stagger="2">
+      ["swimming", "running", "cycling",<br/>
+      "tennis", "badminton", "volleyball",<br/>
+      "piano", "sketching"]
+    </span>
 
     <span class="json-key">Shinjer.languages</span>
-    <div class="tag-list stagger-item" data-stagger="1">
+    <div class="tag-list stagger-item" data-stagger="3">
       <span class="tag accent">Python</span>
       <span class="tag accent">R</span>
       <span class="tag">SQL</span>
@@ -59,116 +78,221 @@
 
 <hr class="divider" id="research"/>
 
-<div class="section-header">
-  <h2>Projects & Research</h2>
-  <span>7 items</span>
+<div class="section-header" id="projects">
+  <h2>Projects</h2>
+  <span>6 items</span>
 </div>
 
-<div class="projects">
+<!-- ── PROJECTS ── -->
+<div class="projects" id="projects">
 
   <div class="project">
     <div>
-      <h3>SepsisAlert — Early Warning Dashboard</h3>
-      <p>An EHR-integrated dashboard that surfaces patients at risk of sepsis using a locally validated NEWS2-derived model. Built to reduce alarm fatigue by prioritizing alerts by predicted severity trajectory rather than point-in-time threshold crossings.</p>
-      <div class="project-tech">
-        <span class="tag">Python</span><span class="tag">FHIR R4</span><span class="tag">React</span><span class="tag">PostgreSQL</span><span class="tag">Epic SMART</span>
-      </div>
+      <h3>Music Key Finder</h3>
+      <p>Find the musical key of any piece of music.</p>
       <div class="project-links">
-        <a href="#">Live Demo</a>
-        <a href="#">View Source</a>
-        <a href="#">Preprint →</a>
+        <a href="https://shinjer-li.github.io/music-key-finder/" target="_blank" rel="noopener noreferrer">Live Demo</a>
       </div>
     </div>
-    <span class="status-pill status-active">Active</span>
+    <span class="status-pill status-active">Live</span>
   </div>
 
   <div class="project">
     <div>
-      <h3>NoteScope — Clinical Note Summarizer</h3>
-      <p>An LLM-powered tool that condenses long inpatient progress notes into structured handoff summaries. Tested against attending-written summaries; reduces summarization time by ~40% in a pilot of 12 residents at JH Bayview.</p>
-      <div class="project-tech">
-        <span class="tag">Python</span><span class="tag">LangChain</span><span class="tag">BERT</span><span class="tag">GPT-4o</span><span class="tag">de-identification</span>
-      </div>
+      <h3>Dermatology Practice</h3>
+      <p>Extra practice for recognizing common dermatological conditions.</p>
       <div class="project-links">
-        <a href="#">Live Demo</a>
-        <a href="#">View Source</a>
+        <a href="https://shinjer-li.github.io/DERM-practice/" target="_blank" rel="noopener noreferrer">Live Demo</a>
       </div>
     </div>
-    <span class="status-pill status-research">In Study</span>
+    <span class="status-pill status-active">Live</span>
   </div>
 
   <div class="project">
     <div>
-      <h3>EquiMed — Disparities Explorer</h3>
-      <p>Interactive visualization of treatment outcome gaps across race, insurance status, and ZIP code using de-identified hospital discharge data. Built to help quality improvement teams identify high-priority interventions.</p>
-      <div class="project-tech">
-        <span class="tag">R</span><span class="tag">Shiny</span><span class="tag">ggplot2</span><span class="tag">CMS Data</span>
-      </div>
+      <h3>Image to Text Converter</h3>
+      <p>Simple and free text extractor from images.</p>
       <div class="project-links">
-        <a href="#">Live Demo</a>
-        <a href="#">View Source</a>
+        <a href="https://shinjer-li.github.io/OCR-text/" target="_blank" rel="noopener noreferrer">Live Demo</a>
       </div>
     </div>
-    <span class="status-pill status-active">Active</span>
+    <span class="status-pill status-active">Live</span>
   </div>
 
   <div class="project">
     <div>
-      <h3>DosePilot — Weight-Based Dosing Calculator</h3>
-      <p>A mobile-first tool for calculating weight-based medication dosing at the bedside. Built during a sub-I rotation after noticing repeated manual calculation errors on the floor. No external libraries; pure offline-capable PWA.</p>
-      <div class="project-tech">
-        <span class="tag">JavaScript</span><span class="tag">PWA</span><span class="tag">HTML5</span><span class="tag">CSS3</span>
-      </div>
+      <h3>Color Guesser</h3>
+      <p>Game where you can test your color perception.</p>
       <div class="project-links">
-        <a href="#">Live Demo</a>
-        <a href="#">View Source</a>
+        <a href="https://shinjer-li.github.io/colorgame/" target="_blank" rel="noopener noreferrer">Live Demo</a>
       </div>
     </div>
-    <span class="status-pill status-active">Active</span>
+    <span class="status-pill status-active">Live</span>
   </div>
 
   <div class="project">
     <div>
-      <h3>Social Determinants Screener — NLP Pipeline</h3>
-      <p>Automated detection of unmet social needs (housing instability, food insecurity, transportation barriers) from free-text nursing intake notes using fine-tuned ClinicalBERT. Part of a larger grant-funded SDOH project at Hopkins.</p>
-      <div class="project-tech">
-        <span class="tag">Python</span><span class="tag">ClinicalBERT</span><span class="tag">spaCy</span><span class="tag">i2b2</span>
-      </div>
+      <h3>Math Simulations</h3>
+      <p>Basic simulations based on Newtonian physics.</p>
       <div class="project-links">
-        <a href="#">Paper (JAMIA 2025)</a>
-        <a href="#">View Source</a>
+        <a href="https://shinjer-li.github.io/brainrot/" target="_blank" rel="noopener noreferrer">Live Demo</a>
       </div>
     </div>
-    <span class="status-pill status-published">Published</span>
+    <span class="status-pill status-active">Live</span>
   </div>
 
   <div class="project">
     <div>
-      <h3>PulmFlow — Spirometry Reference App</h3>
-      <p>Interactive spirometry interpretation tool based on ATS/ERS 2022 criteria. Allows clinicians to enter raw values and receive a guided differential with confidence intervals, references, and follow-up suggestions. Used by three pulmonology fellows as a teaching aid.</p>
-      <div class="project-tech">
-        <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">D3.js</span>
-      </div>
+      <h3>Plots</h3>
+      <p>Showcase of basic plots for side project.</p>
       <div class="project-links">
-        <a href="#">Live Demo</a>
-        <a href="#">View Source</a>
+        <a href="https://shinjer-li.github.io/DATA303_finalproject" target="_blank" rel="noopener noreferrer">Live Demo</a>
       </div>
     </div>
-    <span class="status-pill status-active">Active</span>
+    <span class="status-pill status-active">Live</span>
   </div>
 
-  <div class="project">
-    <div>
-      <h3>This Portfolio</h3>
-      <p>This page. Responsive site with JSON-structured content, making updates fast. Inspired by the aesthetic of developer portfolios — cleaner than a CV, more personal than a lab website.</p>
-      <div class="project-tech">
-        <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">DM Fonts</span>
-      </div>
-      <div class="project-links">
-        <a href="#">View Source</a>
-      </div>
+</div>
+
+<!-- ── ART ── -->
+<hr class="divider" id="art"/>
+
+<div class="section-header">
+  <h2>Art</h2>
+  <span>4 items</span>
+</div>
+
+<div class="art-gallery-grid">
+  <div class="art-item">
+    <img src="assets/dog.jpg" alt="Art piece 1" class="art-image">
+  </div>
+  <div class="art-item">
+    <img src="assets/eyes.jpg" alt="Art piece 2" class="art-image">
+  </div>
+  <div class="art-item">
+    <img src="assets/headshot-art.jpg" alt="Art piece 3" class="art-image">
+  </div>
+  <div class="art-item">
+    <img src="assets/flower.jpg" alt="Art piece 4" class="art-image">
+  </div>
+</div>
+
+<!-- ── RESEARCH ── -->
+<hr class="divider" id="research"/>
+
+<div class="section-header">
+  <h2>Research</h2>
+  <span>9 items</span>
+</div>
+
+<div class="research-list-block">
+
+  <div class="research-entry">
+    <div class="research-meta-left">
+      <span class="research-type-pill pill-publication">Publication</span>
+      <span class="research-year">2026</span>
     </div>
-    <span class="status-pill status-published">Live</span>
+    <div class="research-body">
+      <strong class="research-title">Permanent Pacemaker Implantation Following Transcatheter Aortic Valve Replacement: Incidence, Predictors, and Association With Reduced Ischemic Stroke Risk</strong>
+      <p class="research-authors">Omar Saleh, Nicholas J. Valle, <u>Shinjer Li</u>, Saleh Mostafa, Israa Saleh, Raymond Benza, Deepak R. Talreja, Matthew R. Summers</p>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/41919584/" class="research-link" target="_blank" rel="noopener noreferrer">View publication →</a>
+    </div>
+  </div>
+
+  <div class="research-entry">
+    <div class="research-meta-left">
+      <span class="research-type-pill pill-publication">Publication</span>
+      <span class="research-year">2025</span>
+    </div>
+    <div class="research-body">
+      <strong class="research-title">RAMM: A Robotic, Autonomous Magnetic field Mapper</strong>
+      <p class="research-authors"><u>Shinjer Li</u>, Samuel J. Rubin, Tyler Meldrum</p>
+      <a href="https://www.sciencedirect.com/science/article/pii/S2468067225000781" class="research-link" target="_blank" rel="noopener noreferrer">View publication →</a>
+    </div>
+  </div>
+
+  <div class="research-entry">
+    <div class="research-meta-left">
+      <span class="research-type-pill pill-publication">Publication</span>
+      <span class="research-year">2024</span>
+    </div>
+    <div class="research-body">
+      <strong class="research-title">Computational Methods in NMR Relaxometry</strong>
+      <p class="research-authors"><u>Shinjer Li</u></p>
+      <a href="https://scholarworks.wm.edu/handle/internal/11734" class="research-link" target="_blank" rel="noopener noreferrer">View publication →</a>
+    </div>
+  </div>
+
+  <div class="research-entry">
+    <div class="research-meta-left">
+      <span class="research-type-pill pill-oral">Oral</span>
+      <span class="research-year">2026</span>
+    </div>
+    <div class="research-body">
+      <strong class="research-title">DASI-guided Valve-in-Valve Transcatheter Aortic Valve Replacement With Leaflet Modification For Low Coronary Heights</strong>
+      <p class="research-authors"><u>Shinjer Li</u>, Nicholas J. Valle, Joshua Dolsen, Matthew R. Summers</p>
+    </div>
+  </div>
+
+  <div class="research-entry">
+    <div class="research-meta-left">
+      <span class="research-type-pill pill-oral">Oral</span>
+      <span class="research-year">2026</span>
+    </div>
+    <div class="research-body">
+      <strong class="research-title">Percutaneous Exclusion Of Ascending Aortic Pseudoaneurysm With Coils</strong>
+      <p class="research-authors"><u>Shinjer Li</u>, Nicholas J. Valle, Joshua Dolsen, Matthew R. Summers</p>
+    </div>
+  </div>
+
+  <div class="research-entry">
+    <div class="research-meta-left">
+      <span class="research-type-pill pill-oral">Oral</span>
+      <span class="research-year">2026</span>
+    </div>
+    <div class="research-body">
+      <strong class="research-title">Complex Valve-in-ring Transcatheter Mitral Valve Replacement: Approaches In Hyperacute Septoannular Angles</strong>
+      <p class="research-authors">Nicholas J. Valle, <u>Shinjer Li</u>, Hira Sarfraz, Eric L. Kiehl, Matthew R. Summers</p>
+    </div>
+  </div>
+
+  <div class="research-entry">
+    <div class="research-meta-left">
+      <span class="research-type-pill pill-poster">Poster</span>
+      <span class="research-year">2024</span>
+    </div>
+    <div class="research-body">
+      <strong class="research-title">CPMG Categorization of Pottery Sherds with t-SNE and UMAP</strong>
+      <p class="research-authors">Kelly Ann Sutterfield, <u>Shinjer Li</u>, Tyler Meldrum</p>
+      <p class="research-conf">SERMACS · Atlanta, GA</p>
+      <a href="assets/pottery_poster 1.pdf" class="research-link" target="_blank" rel="noopener noreferrer">View presentation →</a>
+    </div>
+  </div>
+
+  <div class="research-entry">
+    <div class="research-meta-left">
+      <span class="research-type-pill pill-poster">Poster</span>
+      <span class="research-year">2024</span>
+    </div>
+    <div class="research-body">
+      <strong class="research-title">Quantification of NMR Relaxometry Data with Machine Learning</strong>
+      <p class="research-authors"><u>Shinjer Li</u>, Daniel Vasiliu, Tyler Meldrum</p>
+      <p class="research-conf">ENC · Pacific Grove, CA</p>
+      <a href="assets/ENC poster.pdf" class="research-link" target="_blank" rel="noopener noreferrer">View presentation →</a>
+    </div>
+  </div>
+
+  <div class="research-entry">
+    <div class="research-meta-left">
+      <span class="research-type-pill pill-poster">Poster</span>
+      <span class="research-year">2023</span>
+    </div>
+    <div class="research-body">
+      <strong class="research-title">Designing Low-cost Resistive Coils for Improving Field Homogeneity in Single-sided NMR Systems</strong>
+      <p class="research-authors"><u>Shinjer Li</u>, Samuel J. Rubin, Tyler Meldrum</p>
+      <p class="research-conf">SERMACS · Durham, NC</p>
+      <a href="assets/ShimCity SERMCAS poster.pdf" class="research-link" target="_blank" rel="noopener noreferrer">View presentation →</a>
+    </div>
   </div>
 
 </div>
@@ -187,7 +311,7 @@
   </div>
 </section>
 
-<footer>Made by Dr. Sarah Okonkwo &mdash; Baltimore, MD &copy; 2026</footer>
+<footer>Made by Dr. Shinjer Li &mdash; Norfolk, VA &copy; 2026</footer>
 
 <script src="scripts.js"></script>
 </body>
