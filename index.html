@@ -6,6 +6,7 @@
 <title>Shinjer Li</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="styles.css"/>
+<link rel="icon" type="image/png" href="assets/logo2.png">
 </head>
 <body>
 
@@ -19,11 +20,11 @@
     <a href="#contact">Contact</a>
   </div>
 </nav>
-<section class="hero">
+<section class="hero" id="about">
   <div class="hero-top">
     <div class="hero-left">
       <h1><span class="typed-hero"></span><span class="hero-cursor" aria-hidden="true">|</span></h1>
-      <p>I'm a second year medical student at Eastern Virginia Medical School (EVMS) with an interest in data science, imaging, and clinical informatics. I build tools that make evidence-based medicine more accessible at the point of care.</p>
+      <p>I'm Shinjer (rhymes with ginger)! I'm a second year medical student at Eastern Virginia Medical School (EVMS) with an interest in data science, imaging, and clinical informatics. I build tools that make evidence-based medicine more accessible at the point of care.</p>
     </div>
     <div class="hero-headshot">
       <div class="headshot-wrap">
@@ -33,58 +34,61 @@
   </div>
 
   <div class="hero-bottom json-block">
-    <span class="json-key">Shinjer.location</span>
+    <span class="json-key">SHINJER.location</span>
     <span class="json-val">"Norfolk, VA"</span>
 
-    <span class="json-key">Shinjer.contact</span>
-    <span class="json-val">["<a href='ma&#105;lt&#111;&#58;&#37;&#55;3l%69&#48;2&#37;30%&#52;0o%&#54;4&#117;&#46;edu'>sli&#48;20&#64;od&#117;&#46;ed&#117;</a>", "<a href="https://github.com/shinjer-li" target="_blank">GitHub</a>"]</span>
+    <span class="json-key">SHINJER.contact</span>
+    <span class="json-val">["<a href='ma&#105;lt&#111;&#58;&#37;&#55;3l%69&#48;2&#37;30%&#52;0o%&#54;4&#117;&#46;edu'>sli&#48;20&#64;od&#117;&#46;ed&#117;</a>", "<a href="https://github.com/shinjer-li" target="_blank">GitHub</a>", "<a href="https://www.linkedin.com/in/shinjer-li-0211542a5/" target="_blank">LinkedIn</a>"]</span>
 
-    <span class="json-key">Shinjer.cv</span>
+    <span class="json-key">SHINJER.cv</span>
     <span class="json-val">"<a href="assets/CV.pdf" target="_blank">li_shinjer_cv.pdf</a>"</span>
 
-    <span class="json-key">Shinjer.education</span>
+    <span class="json-key">SHINJER.education</span>
     <span class="json-val stagger-item" data-stagger="0">
       ["M.D. — Eastern Virginia Medical School (Class of 2029)",<br/>
       "B.S. — Chemistry & Data Science — William & Mary (Dec 2024)"]
     </span>
 
-    <span class="json-key">Shinjer.affiliations</span>
+    <span class="json-key">SHINJER.affiliations</span>
     <span class="json-val stagger-item" data-stagger="1">
       ["<a href="https://www.acr.org" target="_blank">ACR</a> 2025",
       "<a href="https://www.rsna.org" target="_blank">RSNA</a> 2025",
       "<a href="https://snmmi.org/" target="_blank">SNMMI</a> 2025"]
     </span>
 
-    <span class="json-key">Shinjer.interests</span>
-    <span class="json-val">["clinical decision support", "health equity", "NLP in EHR"]</span>
+    <span class="json-key">SHINJER.interests</span>
+    <span class="json-val">["machine learning", "data science", "health equity", "NLP", "image analysis"]</span>
 
-    <span class="json-key">Shinjer.hobbies</span>
+    <span class="json-key">SHINJER.hobbies</span>
     <span class="json-val stagger-item" data-stagger="2">
-      ["swimming", "running", "cycling",<br/>
+      ["swimming", "running", "cycling",
       "tennis", "badminton", "volleyball",<br/>
       "piano", "sketching"]
     </span>
 
-    <span class="json-key">Shinjer.languages</span>
+    <span class="json-key">SHINJER.languages</span>
     <div class="tag-list stagger-item" data-stagger="3">
-      <span class="tag accent">Python</span>
-      <span class="tag accent">R</span>
+      <span class="tag">Python</span>
+      <span class="tag accent">HTML</span>
+      <span class="tag accent">CSS</span>
+      <span class="tag accent">JavaScript</span>
       <span class="tag">SQL</span>
-      <span class="tag">FHIR / HL7</span>
-      <span class="tag">JavaScript</span>
+      <span class="tag">C++</span>
+      <span class="tag">R</span>
+      <span class="tag">Bash</span>
     </div>
   </div>
 </section>
 
-<hr class="divider" id="research"/>
+<hr class="divider" id="projects"/>
 
-<div class="section-header" id="projects">
+<div class="section-header">
   <h2>Projects</h2>
   <span>6 items</span>
 </div>
 
 <!-- ── PROJECTS ── -->
-<div class="projects" id="projects">
+<div class="projects" >
 
   <div class="project">
     <div>
@@ -99,8 +103,8 @@
 
   <div class="project">
     <div>
-      <h3>Dermatology Practice</h3>
-      <p>Extra practice for recognizing common dermatological conditions.</p>
+      <h3>Imaging Practice</h3>
+      <p>Extra practice for recognizing common gross pathology, radiological studies, histology, blood smears, and more.</p>
       <div class="project-links">
         <a href="https://shinjer-li.github.io/DERM-practice/" target="_blank" rel="noopener noreferrer">Live Demo</a>
       </div>
@@ -304,9 +308,9 @@
       <p>Interested in collaborating on clinical informatics, research, or tooling? I'd love to hear from you.</p>
     </div>
     <div class="contact-links">
-      <a href="#" class="contact-btn btn-primary">Email me</a>
-      <a href="#" class="contact-btn btn-outline">LinkedIn</a>
-      <a href="#" class="contact-btn btn-outline">GitHub</a>
+      <a href='ma&#105;lto&#58;s&#108;%6&#57;%30&#50;%30&#64;o&#100;u&#46;e&#100;u' class="contact-btn btn-primary">Email me</a>
+      <a href="https://www.linkedin.com/in/shinjer-li-0211542a5/" target="_blank" rel="noopener noreferrer" class="contact-btn btn-outline">LinkedIn</a>
+      <a href="https://github.com/shinjer-li" target="_blank" rel="noopener noreferrer" class="contact-btn btn-outline">GitHub</a>
     </div>
   </div>
 </section>
