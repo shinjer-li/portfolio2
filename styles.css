@@ -538,7 +538,7 @@ footer {
 }
 
 .art-item {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   border-radius: 4px;
   border: 0.5px solid var(--border);
@@ -553,7 +553,7 @@ footer {
 }
 
 .art-item:hover .art-image {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 @media (max-width: 680px) {
@@ -617,7 +617,8 @@ footer {
 .pill-publication { background: var(--accent-light); color: var(--accent);  border: 0.5px solid var(--accent-mid); }
 .pill-oral        { background: #EEF1FB;             color: #3B52A0;         border: 0.5px solid #8EA0DA; }
 .pill-poster      { background: #FEF8E7;             color: #8A6200;         border: 0.5px solid #DDB84A; }
-.pill-draft       { background: #F5F5F5;             color: var(--muted);    border: 0.5px solid var(--border); }
+.pill-draft       { background: #F5F5F5;             color: var(--muted);      border: 0.5px solid var(--border); }
+.pill-in-progress { background: #FFF0F0; color: #C0392B; border: 0.5px solid #E8A0A0; }
 
 .research-title {
   font-family: var(--serif);
